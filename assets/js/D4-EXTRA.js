@@ -7,6 +7,33 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("ESERCIZIO 1-EXTRA");
+function giveMeRandom(n){
+    let arrayRandom=[];
+    for(let i = 0 ; i < n; i++){
+        arrayRandom.push(Math.floor(Math.random()* 11));
+
+    }
+    return arrayRandom;
+
+}
+
+const arrayN = giveMeRandom(3);
+function checkArray(arrayN){
+    sommaTot = 0;
+    for(let i = 0; i < arrayN.length; i++){
+        
+        if(arrayN[i] > 5){
+            console.log("il valore di " + arrayN[i] + " è maggiore di 5");
+            sommaTot += arrayN[i];
+        }else{
+            console.log("il valore di " + arrayN[i] + " è minore di 5"); 
+        }
+    }
+    return sommaTot
+}
+console.log(checkArray(arrayN))
+console.log(arrayN);
 
 /* EXTRA 2
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
